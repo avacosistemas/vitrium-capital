@@ -1,0 +1,692 @@
+:root{
+    --negro: #252525;
+    --gris: #49453F;
+    --verde: #9CA845;
+}
+
+@font-face {
+    font-family: 'dinbold';
+    src: url('../../../fonts/din_bold-webfont.woff2') format('woff2'),
+         url('../../../fonts/din_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'gothammedium';
+    src: url('../../../fonts/gothammedium-webfont.woff2') format('woff2'),
+         url('../../../fonts/gothammedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gothamlight';
+    src: url('../../../fonts/gothamlight-webfont.woff2') format('woff2'),
+         url('gothamlight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gothambold';
+    src: url('../../../fonts/gotham-bold-webfont.woff2') format('woff2'),
+         url('../../../fonts/gotham-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gothambook';
+    src: url('../../../fonts/gothambook-webfont.woff2') format('woff2'),
+         url('../../../fonts/gothambook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.boton_grande{
+    background: var(--verde);
+    font-family: "gothammedium";
+    font-size: 20px;
+    font-weight: normal;
+    padding: 15px 36px;
+    &:hover{
+        background: var(--gris);
+        color: var(--negro);
+    }
+}
+
+h3.slogan{
+    font-family: 'gothamlight';
+    text-transform: none;
+    background: none;
+    font-size: 33px;
+    b{
+        font-family: 'gothammedium';
+    }
+}
+
+#page_interna_proyecto.proyecto_nuevo{
+    .main_button{
+        color: var(--verde);
+        border: 1px solid var(--verde);
+        font-family: 'gothamlight';
+        &:hover{
+            background: var(--verde);
+            color: white;
+            border-color: var(--verde);
+        }
+    }
+    #banner_principal{
+        .banner_principal_img{
+            min-height: 1240px;
+            img{
+                width: 80px;
+                padding: 0 0 40px 0;
+            }
+        }
+    }
+    .etiqueta_negra{
+        font-family: 'gothamlight';
+        p{
+            font-size: 10px;
+            b{
+                font-family: 'gothambook';
+                font-size: 12px;
+            }
+        }
+    } 
+}
+
+p.parrafo{
+    font-family: 'gothamlight';
+    font-size: 16px;
+}
+
+.icono_flotante{
+    display: none;
+}
+
+.titulo_cont{
+    h2, h3{
+        color: var(--verde);
+        font-family: 'gothamlight';
+    }
+    h3{
+        font-family: 'gothammedium';
+    }
+    .firuleteazul{
+        background: none;
+    }
+}
+
+section#edificio_interactivo{
+    background: none;
+    .edificio_interactivo_col{
+        .titulo_cont{
+            position: static;
+            display: block;
+            text-align: center;
+            h3{
+                font-family: 'gothammedium';
+            }
+        }
+    }
+
+    .edificio_interactivo{
+		width: 850px;
+		// height: 748px;
+		background: url(edificio/edificio_desktop.png) no-repeat center;
+		background-size: contain;
+		margin: 0 auto;
+	    align-items: center;
+	    flex-direction: column;
+	    transition: .2s linear all;
+        padding-top: 20px;
+        background-position: top center;
+
+        .nivel_div{
+	    	position: relative;
+            
+			.nivel{
+				opacity: .9;
+				display: block;
+			    border: none;
+			    padding: 0;
+			    margin: 0;
+			    height: auto;
+			    width: auto;
+			    background: none;
+			    position: relative;
+            }
+
+            .panel{
+                border-color: var(--verde);
+                width: 200px;
+                right: -210px;
+
+                img{
+                    width: 32px;
+                }
+                span{
+                    color: var(--negro);
+                }
+                &::before{
+					content:'';
+					background: url(greenarrow.svg) no-repeat center center;
+					background-size: contain;
+					width: 16px;
+					height: 20px;
+					position: absolute;
+					bottom: 0;
+					left: -30px;
+					display: block;
+
+				}
+            }
+        }
+    }
+}
+
+section#detalles_edificio{
+    background: none;
+    padding: 80px 0 0 0;
+    .titulo_cont {
+        h3{
+            padding-bottom: 60px;
+        }
+    }
+}
+
+
+.carousel01{
+    .carousel01_item{
+        .carousel01_caption{
+            padding: 16px;
+            text-align: left;
+        }
+        &.slick-center{
+            margin-top: -19px;
+        }
+    }
+} 
+
+.carousel01_arrows, .carousel02_arrows{
+    .slick-prev{
+        background-image: url(prevarrow.svg);
+    }
+    .slick-next{
+        background-image: url(nextarrow.svg);
+    }
+}
+
+section#mapa_interactivo{
+    >.container{
+        padding-top: 100px;
+    }
+    h2{
+        font-family: 'gothamlight';
+        padding-bottom: 30px;
+        b{
+            font-family: 'gothambold';
+        }
+    }
+    p{
+        padding-bottom: 0px;
+    }
+    .nav-pills{
+        .nav-item{
+            button.nav-link{
+                background: var(--verde);
+                border: 1px solid var(--verde);
+                color: white;
+                &.active{
+                    border-color: var(--verde);
+                    color: black;
+                }
+            }
+        }
+    }
+    .mapa_interactivo_cont{
+        .itemmapa{
+            &.item1{
+                top: 7%;
+                left: 60%;
+                width: 119px
+            }
+            &.item2{
+                top: 52%;
+                left: 23%;
+                width: 102px;
+            }
+            &.item3{
+                top: 82%;
+                left: 26%;
+                width: 99px;
+            }
+            &.item4{
+                top: 23%;
+                left: 32%;
+                width: 143px;
+            }
+            &.item5{
+                top: 60%;
+                left: 27%;
+                width: 88px;
+            }
+            &.item6{
+                top: 58%;
+                left: 42%;
+                width: 109px;
+            }
+            &.item7{
+                top: 50%;
+                left: 42%;
+                width: 100px;
+            }
+            &.item8{
+                top: 51%;
+                left: 65%;
+                width: 113px;
+            }
+            &.item9{
+                top: 59%;
+                left: 57%;
+                width: 103px
+            }
+            &.cartelvista{
+                top: 23%;
+                left: 52%;
+                width: 160px;
+            }
+        }
+    }
+}
+
+section#detalles_edificio_2{
+    background-image: none;
+    h4{
+        font-family: 'gothamlight';
+    }
+    .cards{
+        .card{
+            border-radius: 20px;
+            border: 1px solid var(--negro);
+            background: var( #FFF);
+            p.parrafo{
+                text-align: left;
+                font-size: 13px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+
+section#detalles_edificio_3{
+    background-image: none;
+    padding-top: 100px;
+    h3{
+        padding-bottom: 20px;
+    }
+    p.parrafo{
+        padding-bottom: 40px;
+    }
+}
+
+section#big_cta .big_cta_cont{ 
+    min-height: 720px;
+    h2{
+        font-family: 'gothammedium';
+    }
+    .big_button{
+        background: var(--verde);
+        color: white;
+        font-family: 'gothammedium' !important;
+        border-color: var(--verde);
+        &:hover{
+            border-color: var(--verde);
+            background: white;
+            color:var(--verde)
+        }
+    }
+}
+
+section#prensa {
+
+    .row.cada_prensa {
+        .col_info {
+            .logo-prensa{
+				height: auto;
+			}
+
+            h4 {
+                font-size: 24px;
+                color: var(--negro)
+
+            }
+
+            a.boton_prensa {
+                background: var(--negro);
+                color: white;
+                font-family: "gothammedium" !important;
+                border-color: var(--negro);
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+section#seccion_contacto {
+    background: var(--verde);
+
+    .form_verde {
+        h2 {
+            position: relative;
+            &:before {
+                content: '';
+                border: 1px solid #fff;
+                width: 100%;;
+                position: absolute;
+                height: 1px;;
+                z-index: 1;
+            }
+
+            span {
+                position: relative;
+                z-index: 2;
+                color:white;
+                background-color: var(--verde);
+                padding: 0 10px
+            }
+        }
+
+        .form-check-label {
+            color:white;
+        }
+
+        .form-check-input:checked {
+            background-color: white;
+            border-color: white;
+        }
+
+        .form-check-input:checked[type=radio] {
+            background-image: url(checked.svg);
+        }
+
+        .botonsiguientepop {
+            background-color: var(--negro);
+            color: white;
+            text-transform: uppercase;
+            width: auto;
+            font-family: "gothammedium";
+        }
+    }
+}
+
+#invertir_en_el_proyecto{
+    h2{
+        font-family: 'gothamlight';
+        b{
+            font-family: 'gothambold';
+        }
+    }
+    .inversiones_logovitrium{
+        width: 140px;
+        margin-bottom: 30px;
+    }
+    p.parrafo{
+        font-family: 'gothamlight';
+        font-size: 18px;
+        line-height: 150%;
+    }
+    .botones_contacto{
+        font-family: 'gothammedium';
+        .big_button{
+            background: var(--verde);
+            color: white;
+            font-family: 'gothammedium' !important;
+            border-color: var(--verde);
+            &:hover{
+                border-color: var(--verde);
+                background: transparent;
+                color:var(--verde)
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 768px){
+
+    .carousel_plantas_mobile_item{
+        border-color: var(--verde);
+        span{
+            color: var(--verde);
+        }
+        a.botonazul{
+            background: var(--verde);
+        }
+    }
+
+    .carousel_plantas_mobile_arrows, .cards_arrows {
+        padding: 0 0 40px 0;
+    }
+    .carousel_plantas_mobile_arrows .slick-prev, .cards_arrows .slick-prev{
+        background-image: url(prevarrow.svg);
+    }
+    .carousel_plantas_mobile_arrows .slick-next, .cards_arrows .slick-next {
+        background-image: url(nextarrow.svg);
+    }
+
+
+    section#mapa_interactivo{
+        .mapa_interactivo_cont{
+            .itemmapa{
+                &.item1{
+                    top: 7%;
+                    left: 66%;
+                    width: 93px;
+                }
+                &.item2{
+                    top: 52%;
+                    left: 0%;
+                    width: 79px;
+                }
+                &.item3{
+                    top: 82%;
+                    left: 5%;
+                    width: 81px;
+                }
+                &.item4{
+                    top: 23%;
+                    left: 28%;
+                    width: 116px;
+                }
+                &.item5{
+                    top: 60%;
+                    left: 7%;
+                    width: 69px;
+                }
+                &.item6{
+                    top: 58%;
+                    left: 31%;
+                    width: 88px;
+                }
+                &.item7{
+                    top: 41%;
+                    left: 60%;
+                    width: 77px;
+                }
+                &.item8{
+                    top: 53%;
+                    left: 76%;
+                    width: 88px;
+                }
+                &.item9{
+                    top: 59%;
+                    left: 62%;
+                    width: 92px;
+                }
+                &.cartel.ciudad{
+                    width: 140px;
+                }
+                &.cartelvista{
+                    top: 23%;
+                    left: 54%;
+                    width: 127px;
+                }
+            }
+        }
+    } 
+}
+
+
+section#proyecto_niveles {
+    background-image: none;
+    .proyecto_niveles_logo {
+        img {
+            width: 110px;
+        }
+    }
+}
+
+main{
+    &.proyecto_nuevo_niveles{
+        section#proyecto_niveles {
+
+            .proyecto_breadcrumb{
+                font-family: 'gothamlight', sans-serif;
+                padding-bottom: 14px;
+
+                a{
+                    font-family: 'gothamlight', sans-serif;
+                    color:#818181;
+                    padding: 0 13px 0 0;
+                    margin: 0 5px 0 0;
+                    &::after{
+                      background-image: url(chevron_verde.svg);  
+                    }
+                }
+
+                span {
+                    color:#818181;
+                }
+            }
+            h3.proyecto_titulo_niveles{
+                font-family: 'gothamlight', sans-serif;
+                color: var(--negro);
+                b{
+                    font-family: 'gothambold';
+                }
+            }
+        }
+
+        section#thumbs_deptos{
+            .thumbs_deptos_titulo_principal{
+                font-family: 'gothamlight';
+                margin: 160px 0 80px 0;
+                color: var(--verde);
+            }
+            .thumbs_deptos_subtitulo{
+                font-family: "gothammedium";
+                margin: 14px 0 23px 0;
+                background: none;
+                padding: 0 ;
+                display: block;
+                font-size: 25px;
+                color:var(--negro);
+
+                small {
+                    margin-left: 35px;
+                    font-family: 'gothamlight';
+                    color:var(--negro);
+                    font-size: 16px;
+                }
+            }
+            .thumbs_deptos{
+                .un_thumb_depto{
+                    width: 24%;
+                    .un_thumb_depto_titulo{
+                        font-family: "gothamlight";
+                        color: var(--verde);
+                        b{
+                            font-family: 'gothambold';
+                        }
+                    }
+                    .un_thumb_depto_subtitulo{
+                        font-family: 'gothambold';
+                        color: var(--negro);
+                    }
+                    .un_thumb_depto_parrafo{
+                        font-family: "gothamlight";
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                    &:hover{
+                        border-color: var(--verde);
+                    }
+                }
+            }
+
+            .cocheras_descr {
+                p {
+                    color: var(--negro)
+                }
+            }
+        }
+    }   
+}
+
+.panel_pop_container{
+    border-top-color: var(--negro);
+    border-right-color: var(--negro);
+    .panel_pop{
+        .tipo_de_depto{
+            color: var(--negro);
+            font-family: "gothamlight";
+            background: transparent;
+            padding: 0;
+        }
+        .titulo_imagenes{
+            font-family: "gothammedium";
+            color: var(--negro);
+        }
+        .numero_de_depto{
+                font-family: "gothamlight";
+                color: var(--negro);
+                margin: 0;
+            b{
+                font-family: "gothammedium";
+                color: var(--negro);
+            }
+        }
+    }
+}
+.carousel_imagenes_arrows, .carousel_deptos_arrows{
+    padding: 0px 0 20px 0;
+    .slick-prev{
+        background-image: url(prevarrow.svg);
+    }
+    .slick-next{
+        background-image: url(nextarrow.svg);
+    }
+}
+.carousel_imagenes_arrows{
+    padding: 20px 0 20px 0;
+}

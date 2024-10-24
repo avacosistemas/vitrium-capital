@@ -1,0 +1,805 @@
+:root{
+    --negro: #252525;
+    --gris: #49453F;
+    --rosa: #E71D72;
+}
+
+@font-face {
+    font-family: 'dinbold';
+    src: url('../../../fonts/din_bold-webfont.woff2') format('woff2'),
+         url('../../../fonts/din_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'gothammedium';
+    src: url('../../../fonts/gothammedium-webfont.woff2') format('woff2'),
+         url('../../../fonts/gothammedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gothamlight';
+    src: url('../../../fonts/gothamlight-webfont.woff2') format('woff2'),
+         url('gothamlight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gothambold';
+    src: url('../../../fonts/gotham-bold-webfont.woff2') format('woff2'),
+         url('../../../fonts/gotham-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gothambook';
+    src: url('../../../fonts/gothambook-webfont.woff2') format('woff2'),
+         url('../../../fonts/gothambook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.boton_grande{
+    background: var(--rosa);
+    font-family: "gothammedium";
+    font-size: 20px;
+    font-weight: normal;
+    padding: 15px 36px;
+    &:hover{
+        background: var(--gris);
+        color: var(--negro);
+    }
+}
+
+h3.slogan{
+    font-family: 'gothamlight';
+    text-transform: none;
+    background: none;
+    font-size: 33px;
+    b{
+        font-family: 'gothammedium';
+    }
+}
+
+#page_interna_proyecto.proyecto_nuevo{
+    .main_button{
+        color: var(--rosa);
+        border: 1px solid var(--rosa);
+        font-family: 'gothamlight';
+        &:hover{
+            background: var(--rosa);
+            color: white;
+            border-color: var(--rosa);
+        }
+        @media(max-width: 767px) {
+            display: block;
+        }
+    }
+    #banner_principal{
+        .banner_principal_img{
+            min-height: 1240px;
+            img{
+                width: 80px;
+                padding: 0 0 40px 0;
+            }
+        }
+    }
+    .etiqueta_negra{
+        font-family: 'gothamlight';
+        p{
+            font-size: 10px;
+            b{
+                font-family: 'gothambook';
+                font-size: 12px;
+            }
+        }
+    } 
+}
+
+p.parrafo{
+    font-family: 'gothamlight';
+    font-size: 16px;
+}
+
+.icono_flotante{
+    display: none;
+}
+
+.titulo_cont{
+    h2, h3{
+        color: var(--rosa);
+        font-family: 'gothamlight';
+    }
+    h3{
+        font-family: 'gothammedium';
+    }
+    .firuleteazul{
+        background: none;
+    }
+}
+
+section#edificio_interactivo{
+    background: none;
+    .edificio_interactivo_col{
+        .titulo_cont{
+            position: static;
+            display: block;
+            text-align: center;
+            
+            h2{
+                color: var(--rosa);
+            }
+            h3{
+                font-family: 'gothammedium';
+                color: var(--rosa);
+            }
+        }
+    }
+    .edificio_interactivo{
+        
+        .nivel_div{
+            
+            .panel{
+                border-color: var(--rosa);
+                img{
+                    width: 32px;
+                }
+                span{
+                    color: var(--negro);
+                }
+
+                h2 {
+                    color: var(--rosa);
+                }
+                &::before{
+					content:'';
+					background: url(greenarrow.svg) no-repeat center center;
+					background-size: contain;
+					width: 16px;
+					height: 20px;
+					position: absolute;
+					bottom: 0;
+					left: -30px;
+					display: block;
+
+				}
+            }
+        }
+    }
+}
+
+section#edificio_interactivo{
+	.edificio_interactivo{
+		width: 686px;
+		height: 994px;
+		background: url(edificio/desktop.png) no-repeat center;
+		background-size: contain;
+		margin: 0 auto;
+	    align-items: center;
+	    flex-direction: column;
+	    transition: .2s linear all;
+        padding-top: 15px;
+	    .nivel_div{
+	    	position: relative;
+            // background-color: rgba($color: #000000, $alpha: .2);
+            // border-bottom: 1px solid #FFF;
+			.nivel{
+				opacity: .9;
+				display: block;
+			    border: none;
+			    padding: 0;
+			    margin: 0;
+			    height: auto;
+			    width: auto;
+			    background: none;
+			    position: relative;
+			    
+				&.nivel7{svg{rect{fill:aqua; opacity: 0;}}}
+				&.nivel6{svg{rect{fill:black; opacity: 0;}}}
+				&.nivel5{svg{rect{fill:aqua; opacity: 0;}}}
+				&.nivel4{svg{rect{fill:blue; opacity: 0;}}}
+				&.nivel3{svg{rect{fill:red; opacity: 0;}}}
+                &.nivel2{svg{rect{fill:yellow; opacity: 0;}}}
+                &.nivel1{svg{rect{fill:brown; opacity: 0;}}}
+				&.nivelpb{svg{rect{fill:green; opacity: 0;}}}
+				&.subsuelo{svg{rect{fill:#cccccc; opacity: 1;}}}
+			}
+		}
+	}
+}
+
+section#detalles_edificio{
+    background: none;
+    padding: 80px 0 0 0;
+    .titulo_cont {
+        h3{
+            padding-bottom: 60px;
+        }
+    }
+}
+
+
+.carousel01{
+    .carousel01_item{
+        .carousel01_caption{
+            padding: 16px;
+            text-align: left;
+        }
+        &.slick-center{
+            margin-top: -19px;
+        }
+    }
+} 
+
+.carousel01_arrows, .carousel02_arrows{
+    .slick-prev{
+        background-image: url(prevarrow.svg);
+    }#.carousel01{
+    .carousel01_item{
+        .carousel01_caption{
+            padding: 16px;
+            text-align: left;
+        }
+        &.slick-center{
+            margin-top: -19px;
+        }
+    }
+} 
+
+.carousel01_arrows, .carousel02_arrows{
+    .slick-prev{
+        background-image: url(prevarrow.svg);
+    }
+    .slick-next{
+        background-image: url(nextarrow.svg);
+    }
+}
+    .slick-next{
+        background-image: url(nextarrow.svg);
+    }
+}
+
+section#mapa_interactivo{
+    >.container{
+        padding-top: 100px;
+    }
+    h2{
+        font-family: 'gothamlight';
+        padding-bottom: 30px;
+        b{
+            font-family: 'gothambold';
+        }
+    }
+    p{
+        padding-bottom: 20px;
+    }
+    .nav-pills{
+        .nav-item{
+            button.nav-link{
+                background: var(--rosa);
+                border: 1px solid var(--rosa);
+                color: white;
+                &.active{
+                    border-color: var(--rosa);
+                    color: var(--rosa);
+                }
+            }
+        }
+    }
+    .mapa_interactivo_cont{
+        .itemmapa{
+            &.item1{
+                top: 7%;
+                left: 60%;
+                width: 119px
+            }
+            &.item2{
+                top: 52%;
+                left: 23%;
+                width: 102px;
+            }
+            &.item3{
+                top: 82%;
+                left: 26%;
+                width: 99px;
+            }
+            &.item4{
+                top: 23%;
+                left: 32%;
+                width: 143px;
+            }
+            &.item5{
+                top: 60%;
+                left: 27%;
+                width: 88px;
+            }
+            &.item6{
+                top: 58%;
+                left: 42%;
+                width: 109px;
+            }
+            &.item7{
+                top: 50%;
+                left: 42%;
+                width: 100px;
+            }
+            &.item8{
+                top: 51%;
+                left: 65%;
+                width: 113px;
+            }
+            &.item9{
+                top: 59%;
+                left: 57%;
+                width: 103px
+            }
+            &.cartelvista{
+                top: 23%;
+                left: 52%;
+                width: 160px;
+            }
+        }
+    }
+}
+
+section#detalles_edificio_2{
+    background-image: none;
+    h4{
+        font-family: 'gothamlight';
+    }
+    .cards{
+        .card{
+            border-radius: 20px;
+            border: 1px solid var(--negro);
+            background: var( #FFF);
+            p.parrafo{
+                text-align: left;
+                font-size: 13px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+
+section#detalles_edificio_3{
+    background-image: none;
+    padding-top: 100px;
+    h3{
+        padding-bottom: 20px;
+    }
+    p.parrafo{
+        padding-bottom: 40px;
+    }
+}
+
+section#big_cta .big_cta_cont{ 
+    min-height: 720px;
+
+    h2{
+        font-family: 'gothammedium';
+    }
+    .big_button{
+        background: var(--rosa);
+        color: white;
+        font-family: 'gothammedium' !important;
+        border-color: var(--rosa);
+        &:hover{
+            border-color: var(--rosa);
+            background: white;
+            color:var(--rosa)
+        }
+    }
+}
+
+section#prensa {
+    .titulo_cont {
+        padding-bottom: 110px;
+    }
+    .row.cada_prensa {
+        border: 1px solid var(--negro);
+
+        .col_img {
+            border-right: 1px solid var(--negro);
+        }
+
+        .col_info {
+            padding: 50px;
+
+            .logo-prensa{
+				height: 40px;
+			}
+
+            h4 {
+                font-size: 24px;
+                font-family: 'gothammedium';
+                color: var(--negro)
+
+            }
+
+            a.boton_prensa {
+                background: var(--negro);
+                color: white;
+                font-family: "gothammedium" !important;
+                border-color: var(--negro);
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+#invertir_en_el_proyecto{
+    h2{
+        font-family: 'gothamlight';
+        b{
+            font-family: 'gothambold';
+        }
+    }
+    .inversiones_logovitrium{
+        width: 140px;
+        margin-bottom: 30px;
+    }
+    p.parrafo{
+        font-family: 'gothamlight';
+        font-size: 18px;
+        line-height: 150%;
+    }
+    .botones_contacto{
+        font-family: 'gothammedium';
+        .big_button{
+            background: var(--rosa);
+            color: white;
+            font-family: 'gothammedium' !important;
+            border-color: var(--rosa);
+            &:hover{
+                border-color: var(--rosa);
+                background: transparent;
+                color:var(--rosa)
+            }
+        }
+    }
+}
+
+section#otros_proyectos {
+    .titulo_cont {
+        h2, h3 {
+            color:var(--rosa);
+        }
+    }
+}
+
+section#seccion_contacto {
+    background: #49453F;
+
+    .form_verde {
+        background: #49453F;
+        h2 {
+            position: relative;
+            &:before {
+                content: '';
+                border: 1px solid #fff;
+                width: 100%;;
+                position: absolute;
+                height: 1px;;
+                z-index: 1;
+            }
+
+            span {
+                position: relative;
+                z-index: 2;
+                color:white;
+                background-color: #49453F;
+                padding: 0 10px
+            }
+        }
+
+        .form-check-label {
+            color:white;
+        }
+
+        .form-check-input:checked {
+            background-color: white;
+            border-color: white;
+        }
+
+        .form-check-input:checked[type=radio] {
+            background-image: url(checked.svg);
+        }
+
+        .botonsiguientepop {
+            background-color: var(--rosa);
+            color: #FFF;
+            text-transform: uppercase;
+            width: auto;
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    section#mapa_interactivo{
+        .mapa_interactivo_cont{
+            .itemmapa{
+                &.item1{
+                    top: 7%;
+                    left: 66%;
+                    width: 93px;
+                }
+                &.item2{
+                    top: 52%;
+                    left: 0%;
+                    width: 79px;
+                }
+                &.item3{
+                    top: 82%;
+                    left: 5%;
+                    width: 81px;
+                }
+                &.item4{
+                    top: 23%;
+                    left: 28%;
+                    width: 116px;
+                }
+                &.item5{
+                    top: 60%;
+                    left: 7%;
+                    width: 69px;
+                }
+                &.item6{
+                    top: 58%;
+                    left: 31%;
+                    width: 88px;
+                }
+                &.item7{
+                    top: 41%;
+                    left: 60%;
+                    width: 77px;
+                }
+                &.item8{
+                    top: 53%;
+                    left: 76%;
+                    width: 88px;
+                }
+                &.item9{
+                    top: 59%;
+                    left: 62%;
+                    width: 92px;
+                }
+                &.cartel.ciudad{
+                    width: 140px;
+                }
+                &.cartelvista{
+                    top: 23%;
+                    left: 54%;
+                    width: 127px;
+                }
+            }
+        }
+    } 
+}
+
+@media (max-width: 768px){
+    .carousel_plantas_mobile_item{
+        border-color: var(--rosa);
+
+        h2 {
+            color:var(--rosa);
+        }
+        span{
+            color: var(--negro);
+        }
+        a.botonazul{
+            background: var(--rosa);
+        }
+    }
+    .carousel_plantas_mobile_arrows .slick-prev, .cards_arrows .slick-prev{
+        background-image: url(prevarrow.svg);
+    }
+    .carousel_plantas_mobile_arrows .slick-next, .cards_arrows .slick-next {
+        background-image: url(nextarrow.svg);
+    }
+}
+
+/*** seccion pisos ****/
+section#proyecto_niveles {
+    background-image: none;
+    .proyecto_niveles_logo {
+        img {
+            width: 110px;
+        }
+    }
+}
+
+main{
+    &.proyecto_nuevo_niveles{
+        section#proyecto_niveles {
+            // background: url(figura_d.svg) no-repeat right;
+            // background-size: contain;
+            .proyecto_breadcrumb{
+                font-family: 'gothamlight', sans-serif;
+                a{
+                    font-family: 'gothamlight', sans-serif;
+                    &::after{
+                      background-image: url(chevron_verde.svg);  
+                    }
+                }
+            }
+            h3.proyecto_titulo_niveles{
+                font-family: 'gothamlight', sans-serif;
+                color: var(--rosa);
+                b{
+                    font-family: 'gothambold';
+                }
+            }
+        }
+        section#planos{
+            .row>div:last-child{
+                img{
+                    margin: 0 auto;
+                    display: block;
+                }
+            }
+        }
+        section#thumbs_deptos{
+            .thumbs_deptos_titulo_principal{
+                font-family: 'gothamlight';
+                margin: 160px 0 80px 0;
+                color: var(--rosa);
+            }
+            .thumbs_deptos_subtitulo{
+                font-family: "gothammedium";
+                margin: 14px 0 23px 0;
+                background: none;
+                padding: 0 ;
+                display: block;
+                font-size: 25px;
+                color:var(--negro);
+
+                small {
+                    margin-left: 35px;
+                    font-family: 'gothamlight';
+                    color:var(--negro);
+                    font-size: 16px;
+                }
+            }
+            .thumbs_deptos{
+                .un_thumb_depto{
+                    width: 94%;
+
+                    @media(min-width: 768px) {
+                        width: 44%;
+                    }
+
+                    @media(min-width: 992px) {
+                        width: 24%;
+                    }
+                    .un_thumb_depto_titulo{
+                        font-family: "gothamlight";
+                        color: var(--rosa);
+                        b{
+                            font-family: 'gothambold';
+                        }
+                    }
+                    .un_thumb_depto_subtitulo{
+                        font-family: 'gothambold';
+                        color: var(--negro);
+                    }
+                    .un_thumb_depto_parrafo{
+                        font-family: "gothamlight";
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                    &:hover{
+                        border-color: var(--rosa);
+                    }
+                }
+            }
+        }
+
+        .imagen_nivel_sin_deptos{
+            &.nivel_07{
+                img{
+                    margin: 80px auto;
+                    max-width: 800px;
+                }
+            }
+            &.nivel_subsuelo{
+                img{
+                    margin: 80px auto;
+                    max-width: 600px;
+                }
+            }
+        }
+    }
+}
+
+
+.panel_pop_container{
+    border-top-color: var(--negro);
+    border-right-color: var(--negro);
+    .panel_pop{
+        .tipo_de_depto{
+            color: var(--rosa);
+            font-family: "gothamlight";
+            background: transparent;
+            padding: 0;
+        }
+        .titulo_imagenes{
+            font-family: "gothammedium";
+            color: var(--negro);
+        }
+        .numero_de_depto{
+                font-family: "gothamlight";
+                color: var(--negro);
+                margin: 0;
+            b{
+                font-family: "gothammedium";
+                color: var(--negro);
+            }
+        }
+    }
+}
+.carousel_imagenes_arrows, .carousel_deptos_arrows{
+    padding: 0px 0 20px 0;
+    .slick-prev{
+        background-image: url(prevarrow.svg);
+    }
+    .slick-next{
+        background-image: url(nextarrow.svg);
+    }
+}
+.carousel_imagenes_arrows{
+    padding: 20px 0 20px 0;
+}
+
+
+.iti--allow-dropdown {
+    width: 100%;
+
+    .iti__flag-container {
+        border-right: 1px solid #6F846D;
+        z-index: 2;
+        margin: 0.6rem 0;
+        padding: 0 5px;
+    }
+    input.iti__tel-input {
+        width: 100%;
+        /* background: red; */
+        padding-top: .375rem;
+        padding-bottom: .375rem;
+        font-size: 1rem;
+        border-radius: .375rem;
+        box-shadow: none;
+        border: 1px solid #dee2e6;
+    }
+}
+
+
+@media (max-width: 768px){
+    main{
+        &.proyecto_nuevo_niveles{
+            #thumbs_deptos{
+                margin-top: 30px;
+            }
+        }
+    }
+}

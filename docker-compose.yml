@@ -1,0 +1,18 @@
+services:
+    app:
+        build:
+            context: .
+            dockerfile: .docker/Dockerfile
+        # image: 'shouts.dev/laravel'
+        container_name: app
+        ports:
+            - "80:80"
+        volumes:
+            - ./:/var/www/html
+        working_dir: /var/www/html
+        networks:
+            - laravel
+
+networks:
+    laravel:
+        driver: bridge
